@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		92FCC6BE2A0A658D00BC7C5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6BD2A0A658D00BC7C5C /* AppDelegate.swift */; };
 		92FCC6C02A0A658D00BC7C5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6BF2A0A658D00BC7C5C /* SceneDelegate.swift */; };
-		92FCC6C22A0A658D00BC7C5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6C12A0A658D00BC7C5C /* ViewController.swift */; };
-		92FCC6C52A0A658D00BC7C5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FCC6C32A0A658D00BC7C5C /* Main.storyboard */; };
 		92FCC6C72A0A658E00BC7C5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FCC6C62A0A658E00BC7C5C /* Assets.xcassets */; };
 		92FCC6CA2A0A658E00BC7C5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FCC6C82A0A658E00BC7C5C /* LaunchScreen.storyboard */; };
+		92FCC6D22A0A671B00BC7C5C /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6D12A0A671B00BC7C5C /* GameScreen.swift */; };
+		92FCC6D42A0A685C00BC7C5C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6D32A0A685C00BC7C5C /* Cell.swift */; };
+		92FCC6D62A0BAC7700BC7C5C /* Solver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6D52A0BAC7700BC7C5C /* Solver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92FCC6BA2A0A658D00BC7C5C /* TicTacToeVK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToeVK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FCC6BD2A0A658D00BC7C5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92FCC6BF2A0A658D00BC7C5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92FCC6C12A0A658D00BC7C5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92FCC6C42A0A658D00BC7C5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92FCC6C62A0A658E00BC7C5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92FCC6C92A0A658E00BC7C5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92FCC6CB2A0A658E00BC7C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92FCC6D12A0A671B00BC7C5C /* GameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
+		92FCC6D32A0A685C00BC7C5C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		92FCC6D52A0BAC7700BC7C5C /* Solver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		92FCC6BC2A0A658D00BC7C5C /* TicTacToeVK */ = {
 			isa = PBXGroup;
 			children = (
+				92FCC6D92A0BC50200BC7C5C /* Views */,
+				92FCC6D82A0BC4E500BC7C5C /* Controllers */,
+				92FCC6D72A0BC4DA00BC7C5C /* Models */,
 				92FCC6BD2A0A658D00BC7C5C /* AppDelegate.swift */,
 				92FCC6BF2A0A658D00BC7C5C /* SceneDelegate.swift */,
-				92FCC6C12A0A658D00BC7C5C /* ViewController.swift */,
-				92FCC6C32A0A658D00BC7C5C /* Main.storyboard */,
 				92FCC6C62A0A658E00BC7C5C /* Assets.xcassets */,
 				92FCC6C82A0A658E00BC7C5C /* LaunchScreen.storyboard */,
 				92FCC6CB2A0A658E00BC7C5C /* Info.plist */,
 			);
 			path = TicTacToeVK;
+			sourceTree = "<group>";
+		};
+		92FCC6D72A0BC4DA00BC7C5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92FCC6D52A0BAC7700BC7C5C /* Solver.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92FCC6D82A0BC4E500BC7C5C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92FCC6D12A0A671B00BC7C5C /* GameScreen.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		92FCC6D92A0BC50200BC7C5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92FCC6D32A0A685C00BC7C5C /* Cell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +154,6 @@
 			files = (
 				92FCC6CA2A0A658E00BC7C5C /* LaunchScreen.storyboard in Resources */,
 				92FCC6C72A0A658E00BC7C5C /* Assets.xcassets in Resources */,
-				92FCC6C52A0A658D00BC7C5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92FCC6C22A0A658D00BC7C5C /* ViewController.swift in Sources */,
+				92FCC6D22A0A671B00BC7C5C /* GameScreen.swift in Sources */,
+				92FCC6D62A0BAC7700BC7C5C /* Solver.swift in Sources */,
+				92FCC6D42A0A685C00BC7C5C /* Cell.swift in Sources */,
 				92FCC6BE2A0A658D00BC7C5C /* AppDelegate.swift in Sources */,
 				92FCC6C02A0A658D00BC7C5C /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +175,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		92FCC6C32A0A658D00BC7C5C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92FCC6C42A0A658D00BC7C5C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		92FCC6C82A0A658E00BC7C5C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +312,8 @@
 				INFOPLIST_FILE = TicTacToeVK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +339,8 @@
 				INFOPLIST_FILE = TicTacToeVK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
